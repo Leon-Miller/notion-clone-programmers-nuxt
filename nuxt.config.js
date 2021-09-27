@@ -25,6 +25,7 @@ export default {
     ]
   },
   components: true,
+  loading: false,
   build: {
     babel: {
       presets: ['@babel/preset-env'],
