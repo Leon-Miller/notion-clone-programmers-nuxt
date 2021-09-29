@@ -71,6 +71,7 @@ export default {
     }
   },
   created() {
+    // 자신(WorkspaceItem.vue)이 현재 워크스페이스 경로에 해당하는 항목이 맞는지 체크!
     this.showChildren = this.$store.state.workspace.currentWorkspacePath
       .some(workspace => workspace.id === this.workspace.id)
   },
@@ -106,6 +107,10 @@ li {
       }
     }
     &.active {
+      background-color: $color-background--hover1;
+      &:hover {
+        background-color: $color-background--hover2;
+      }
       .text {
         font-weight: 700;
         color: rgba($color-font, .8);
