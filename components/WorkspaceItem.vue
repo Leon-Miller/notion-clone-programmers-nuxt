@@ -99,6 +99,8 @@ li {
     height: 30px;
     padding: 0 14px;
     color: rgba($color-font, .7);
+    cursor: pointer;
+    user-select: none;
     &:hover {
       background-color: $color-background--hover1;
       padding-right: 4px;
